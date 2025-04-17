@@ -8,6 +8,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media screen and (max-width: 670px) {
+      padding: 5px 15px;
+    }
     img {
       width: 40px;
       border-radius: 10px;

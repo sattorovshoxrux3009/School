@@ -21,6 +21,10 @@ function Main() {
             <button>Ro'yxatdan o'tish</button>
           </a>
         </div>
+        <div className="bottom"></div>
+        <a href="#" className="btn">
+          <button>Ro'yxatdan o'tish</button>
+        </a>
       </div>
     </div>
   );
