@@ -116,12 +116,12 @@ function Navbar() {
             <span></span>
           </div>
           <div className="links">
-            <a href="">Biz haqimizda</a>
-            <a href="">Maktab hayoti</a>
-            <a href="">Kun tartibi</a>
-            <a href="">Qabul jarayoni</a>
-            <a href="">Bizning jamoa</a>
-            <a href="">Aloqa</a>
+            <a href="">{t("aboutUs")}</a>
+            <a href="">{t("schoolLife")}</a>
+            <a href="">{t("agenda")}</a>
+            <a href="">{t("admission")}</a>
+            <a href="">{t("ourTeam")}</a>
+            <a href="">{t("contact")}</a>
           </div>
           <div className="bottom">
             <a href="tel:+998787771110">+998-78-777-11-10</a>
