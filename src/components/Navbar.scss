@@ -1,0 +1,70 @@
+.navbar {
+  .wrapper {
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 5px 50px;
+    // border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      width: 40px;
+      border-radius: 10px;
+    }
+    .links {
+      display: flex;
+      gap: 25px;
+      a {
+        font-size: 18px;
+        color: #00264b;
+      }
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      position: relative;
+      a {
+        font-size: 18px;
+        color: #00264b;
+        font-weight: 550;
+      }
+      .btn {
+        position: relative;
+        background-color: #00264b;
+        color: white;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: 1px solid white;
+        cursor: pointer;
+      }
+      .active {
+        border-radius: 50% 50% 0 0;
+      }
+      ul {
+        position: absolute;
+        right: 0px;
+        top: 30px;
+        .btn1,
+        .btn2 {
+          cursor: pointer;
+          position: relative;
+          background-color: #00264b;
+          color: white;
+          width: 35px;
+          height: 35px;
+          border: 1px solid white;
+        }
+        .btn2 {
+          border-radius: 0 0 50% 50%;
+          border-top: 1px solid #00264b;
+        }
+      }
+    }
+    .hidden {
+      display: none;
+    }
+  }
+}
