@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 function Main() {
   const { t } = useTranslation();
   return (
-    <div className="main">
+    <section id="main" className="main">
       <div className="container">
         <div className="left">
           <h1>
@@ -24,7 +24,7 @@ function Main() {
           <button> {t("signUp")}</button>
         </a>
       </div>
-    </div>
+    </section>
   );
 }
 
