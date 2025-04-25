@@ -1,8 +1,10 @@
 import "./Main.scss";
 import { easeOut, motion } from "framer-motion";
 import ourTeamBG from "../../img/ourTeamBG.webp";
+import { useTranslation } from "react-i18next";
 
 function Main() {
+  const { t } = useTranslation();
   return (
     <div className="main">
       <div className="container">
@@ -11,14 +13,13 @@ function Main() {
             whileInView={{ y: [100, 1] }}
             transition={{ duration: 0.3, ease: easeOut }}
           >
-            Bizning jamoamiz
+            {t("ourTeam1")}
           </motion.h1>
           <motion.p
             whileInView={{ y: [100, 1] }}
             transition={{ duration: 0.5, ease: easeOut }}
           >
-            Maktabimiz o‘qituvchilari o‘z vazifalaridan ilhomlangan tajribali
-            mutaxassislardir.
+            {t("ourTeamTeachers")}
           </motion.p>
         </span>
         <motion.img

@@ -2,8 +2,10 @@ import { easeOut, motion } from "framer-motion";
 import { act, useState } from "react";
 import "./Team.scss";
 import teacher1 from "../../img/teamTeacher1.png";
+import { useTranslation } from "react-i18next";
 
 function Team() {
+  const { t } = useTranslation();
   const [active, setActive] = useState("leadership");
   console.log(active);
   return (
@@ -18,7 +20,7 @@ function Team() {
             }}
             className={active == "leadership" ? "active" : ""}
           >
-            Rahbariyat
+            {t("leadership")}
           </motion.button>
           <motion.button
             whileInView={{ y: [50, 1] }}
@@ -28,7 +30,7 @@ function Team() {
             }}
             className={active == "beginner" ? "active" : ""}
           >
-            Boshlang'ich sinf o'qituvchilari
+            {t("beginner")}
           </motion.button>
           <motion.button
             whileInView={{ y: [50, 1] }}
@@ -38,7 +40,7 @@ function Team() {
             }}
             className={active == "high" ? "active" : ""}
           >
-            Katta sinf o'qituvchilari
+            {t("high")}
           </motion.button>
         </span>
         <ul>
