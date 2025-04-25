@@ -8,7 +8,7 @@
     justify-content: space-between;
     .left {
       width: 73%;
-      height: 250px;
+      height: auto;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -21,10 +21,31 @@
         display: flex;
         align-items: center;
         gap: 100px;
+        li {
+          display: flex;
+          align-items: center;
+          gap: 100px;
+          @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+          }
+          div {
+            @media screen and (max-width: 768px) {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+          }
+        }
         h1 {
           color: #00264b;
           font-size: 110px;
           font-weight: 700;
+          @media screen and (max-width: 768px) {
+            font-size: 90px;
+          }
         }
         p {
           font-family: Helvetica;
@@ -41,21 +62,80 @@
           max-width: 400px;
           font-weight: 400;
           font-size: 22px;
+          @media screen and (max-width: 1024px) {
+            max-width: none;
+            text-align: center;
+          }
+          @media screen and (max-width: 768px) {
+            font-size: 14px;
+          }
         }
+        @media screen and (max-width: 1024px) {
+          flex-direction: column;
+          gap: 50px;
+        }
+      }
+      @media screen and (max-width: 1024px) {
+        height: auto;
+        padding: 40px;
+      }
+      @media screen and (max-width: 1370px) {
+        width: 100%;
+        padding: 40px;
+      }
+      @media screen and (max-width: 768px) {
+        background-image: url(../../img/aboutmobile.svg);
+        background-size: contain;
       }
     }
     .right {
-      padding: 40px 0 0 40px;
+      cursor: pointer;
+      padding: 40px 40px 20px 40px;
       width: 25%;
       background-color: white;
       border-radius: 30px;
       position: relative;
-      h1{
+      @media screen and (max-width: 1370px) {
+        width: 100%;
+      }
+      div {
+        height: 68px;
+        position: relative;
+        margin-top: 10px;
+        .img1 {
+          border-radius: 50%;
+          border: 5px solid white;
+          position: absolute;
+          z-index: 1;
+        }
+        .img2 {
+          border-radius: 50%;
+          border: 5px solid white;
+          position: absolute;
+          z-index: 2;
+          left: 45px;
+        }
+        .img3 {
+          border-radius: 50%;
+          border: 5px solid white;
+          position: absolute;
+          z-index: 3;
+          left: 85px;
+        }
+        .img4 {
+          border-radius: 50%;
+          border: 5px solid white;
+          position: absolute;
+          z-index: 4;
+          left: 130px;
+        }
+      }
+      h1 {
         color: #00264b;
         font-size: 22px;
         font-weight: normal;
       }
-      p{
+      p {
         font-family: Helvetica;
         font-size: 18px;
         line-height: 30px;
@@ -63,6 +143,9 @@
         max-width: 250px;
         margin-top: 20px;
         color: #00264b;
+        @media screen and (max-width: 1370px) {
+          max-width: none;
+        }
       }
       svg {
         position: absolute;
@@ -75,6 +158,14 @@
           transform: rotate(-90deg);
         }
       }
+      @media screen and (max-width: 1370px) {
+        width: 100%;
+        padding: 40px;
+      }
+    }
+    @media screen and (max-width: 1370px) {
+      flex-direction: column;
+      gap: 25px;
     }
   }
 }
