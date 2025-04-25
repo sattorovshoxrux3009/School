@@ -5,9 +5,11 @@ import img2 from "../../img/teacher2.png";
 import img3 from "../../img/teacher3.png";
 import img4 from "../../img/teacher4.png";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 function Support() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   return (
     <section className="support">
@@ -34,7 +36,9 @@ function Support() {
           </ul>
         </motion.div>
         <motion.a
-          href=""
+          onClick={() => {
+            navigate("/our_team");
+          }}
           whileInView={{ y: [100, 1] }}
           transition={{ duration: 0.3, ease: easeOut }}
           className="right"
@@ -54,24 +58,9 @@ function Support() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path
-              d="M1 1.96802L30.9998 30.9998"
-              stroke="#00264B"
-              stroke-width="1.49999"
-              stroke-linecap="round"
-            ></path>
-            <path
-              d="M1 31H30.9998"
-              stroke="#00264B"
-              stroke-width="1.49999"
-              stroke-linecap="square"
-            ></path>
-            <path
-              d="M31 1V30.0318"
-              stroke="#00264B"
-              stroke-width="1.49999"
-              stroke-linecap="square"
-            ></path>
+            <path d="M1 1.96802L30.9998 30.9998" stroke="#00264B"></path>
+            <path d="M1 31H30.9998" stroke="#00264B"></path>
+            <path d="M31 1V30.0318" stroke="#00264B"></path>
           </svg>
         </motion.a>
       </div>

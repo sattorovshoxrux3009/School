@@ -2,8 +2,11 @@ import "./Navbar.scss";
 import logo from "../img/logo.jpg";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const navigate = useNavigate();
+  const location = useLocation();
   const [isOpenButtons, setIsOpenButtons] = useState(false);
   const [active, setActive] = useState(false);
   const [activeLang, setActiveLang] = useState(
@@ -28,8 +31,11 @@ function Navbar() {
       <div className="navbar">
         <div className="container">
           <div className="wrapper">
-            <a href="#">
-              {" "}
+            <a
+              onClick={() => {
+                navigate("/");
+              }}
+            >
               <img src={logo} alt="logo" />
             </a>
 
@@ -38,7 +44,16 @@ function Navbar() {
               <a href="">{t("schoolLife")}</a>
               <a href="">{t("agenda")}</a>
               <a href="">{t("admission")}</a>
-              <a href="">{t("ourTeam")}</a>
+              <a
+                onClick={() => {
+                  navigate("/our_team");
+                }}
+                className={
+                  location.pathname === "/our_team" ? "active-link" : ""
+                }
+              >
+                {t("ourTeam")}
+              </a>
               <a href="">{t("contact")}</a>
             </div>
             <div className="right">

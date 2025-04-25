@@ -3,10 +3,10 @@ import Support from "../components/home/Support.jsx";
 
 function Home() {
   return (
-    <>
+    <div className="home">
       <Main />
       <Support />
-    </>
+    </div>
   );
 }
 
