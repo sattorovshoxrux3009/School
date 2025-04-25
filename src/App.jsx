@@ -1,12 +1,30 @@
 import "./App.scss";
-import Navbar from "./components/Navbar";
-import Main from "./components/Main";
+import Home from "./pages/Home.jsx";
+
+// Layouts
+import RootLayout from "./layout/RootLayout.jsx";
+
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+  Route,
+} from "react-router-dom";
 
 function App() {
+  const routes = createBrowserRouter(
+    createRoutesFromElements(
+      <Route element={<RootLayout/>}>
+        <Route path="/" index element={<Home />} />
+
+        {/* <Route path="*" element={<PageError />} /> */}
+      </Route>
+    )
+  );
+
   return (
     <>
-      <Navbar />
-      <Main />
+      <RouterProvider router={routes} />
     </>
   );
 }

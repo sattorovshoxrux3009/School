@@ -1,6 +1,7 @@
 import "./Main.scss";
-import mainImage from "../img/main.jpg";
+import mainImage from "../../img/main.jpg";
 import { useTranslation } from "react-i18next";
+import { easeOut, motion } from "framer-motion";
 
 function Main() {
   const { t } = useTranslation();
@@ -8,10 +9,18 @@ function Main() {
     <section id="main" className="main">
       <div className="container">
         <div className="left">
-          <h1>
+          <motion.h1
+            whileInView={{ opacity: [0, 1] }}
+            transition={{ duration: 1, ease: easeOut }}
+          >
             {t("child")} <span> {t("success")}</span> {t("education")}
-          </h1>
-          <p>{t("mainText")}</p>
+          </motion.h1>
+          <motion.p
+            whileInView={{ opacity: [0, 1] }}
+            transition={{ duration: 1 }}
+          >
+            {t("mainText")}
+          </motion.p>
         </div>
         <div className="right">
           <img src={mainImage} alt="main" className="walpaper" />
