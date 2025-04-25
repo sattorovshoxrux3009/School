@@ -66,9 +66,7 @@ function Team() {
               >
                 <img src={teacher1} alt="" />
                 <h1>TO‘XTANAZAROV XURSHID SHAVKATBEKOVICH</h1>
-                <p>
-                  Maktab direktori
-                </p>
+                <p>Maktab direktori</p>
               </motion.li>
               <motion.li
                 whileInView={{ opacity: [0, 1] }}
@@ -80,9 +78,75 @@ function Team() {
               </motion.li>
             </>
           ) : active == "beginner" ? (
-            <>beginner</>
+            <>
+              <motion.li
+                whileInView={{ opacity: [0, 1] }}
+                transition={{ duration: 0.2, ease: easeOut }}
+              >
+                <img src={teacher1} alt="" />
+                <h1>TO‘XTANAZAROV XURSHID SHAVKATBEKOVICH</h1>
+                <p>Maktab direktor</p>
+              </motion.li>
+              <motion.li
+                whileInView={{ opacity: [0, 1] }}
+                transition={{ duration: 0.7, ease: easeOut }}
+              >
+                <img src={teacher1} alt="" />
+                <h1>TO‘XTANAZAROV XURSHID SHAVKATBEKOVICH</h1>
+                <p>Maktab direktor</p>
+              </motion.li>
+              <motion.li
+                whileInView={{ opacity: [0, 1] }}
+                transition={{ duration: 1.2, ease: easeOut }}
+              >
+                <img src={teacher1} alt="" />
+                <h1>TO‘XTANAZAROV XURSHID SHAVKATBEKOVICH</h1>
+                <p>Maktab direktori</p>
+              </motion.li>
+              <motion.li
+                whileInView={{ opacity: [0, 1] }}
+                transition={{ duration: 1.7, ease: easeOut }}
+              >
+                <img src={teacher1} alt="" />
+                <h1>TO‘XTANAZAROV XURSHID SHAVKATBEKOVICH</h1>
+                <p>Maktab direktor</p>
+              </motion.li>
+            </>
           ) : (
-            <>High</>
+            <>
+              <motion.li
+                whileInView={{ opacity: [0, 1] }}
+                transition={{ duration: 0.2, ease: easeOut }}
+              >
+                <img src={teacher1} alt="" />
+                <h1>TO‘XTANAZAROV XURSHID SHAVKATBEKOVICH</h1>
+                <p>Maktab direktor</p>
+              </motion.li>
+              <motion.li
+                whileInView={{ opacity: [0, 1] }}
+                transition={{ duration: 0.7, ease: easeOut }}
+              >
+                <img src={teacher1} alt="" />
+                <h1>TO‘XTANAZAROV XURSHID SHAVKATBEKOVICH</h1>
+                <p>Maktab direktor</p>
+              </motion.li>
+              <motion.li
+                whileInView={{ opacity: [0, 1] }}
+                transition={{ duration: 1.2, ease: easeOut }}
+              >
+                <img src={teacher1} alt="" />
+                <h1>TO‘XTANAZAROV XURSHID SHAVKATBEKOVICH</h1>
+                <p>Maktab direktori</p>
+              </motion.li>
+              <motion.li
+                whileInView={{ opacity: [0, 1] }}
+                transition={{ duration: 1.7, ease: easeOut }}
+              >
+                <img src={teacher1} alt="" />
+                <h1>TO‘XTANAZAROV XURSHID SHAVKATBEKOVICH</h1>
+                <p>Maktab direktor</p>
+              </motion.li>
+            </>
           )}
         </ul>
       </div>
