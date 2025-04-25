@@ -42,7 +42,7 @@ function Navbar() {
               <a href="">{t("contact")}</a>
             </div>
             <div className="right">
-              <a href="tel:+998787771110">+998-78-777-11-10</a>
+              <a href="tel:+998914433833">+998-91-443-38-33</a>
               <button
                 onClick={() => {
                   setIsOpenButtons(!isOpenButtons);
