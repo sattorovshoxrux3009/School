@@ -131,15 +131,31 @@ function Navbar() {
             <span></span>
           </div>
           <div className="links">
+            <a
+              onClick={() => {
+                setActive(false);
+                navigate("/");
+              }}
+            >
+              {t("homePage")}
+            </a>
             <a href="">{t("aboutUs")}</a>
             <a href="">{t("schoolLife")}</a>
             <a href="">{t("agenda")}</a>
             <a href="">{t("admission")}</a>
-            <a href="">{t("ourTeam")}</a>
+            <a
+              onClick={() => {
+                navigate("/our_team");
+                setActive(false);
+              }}
+              className={location.pathname === "/our_team" ? "active-link" : ""}
+            >
+              {t("ourTeam")}
+            </a>
             <a href="">{t("contact")}</a>
           </div>
           <div className="bottom">
-            <a href="tel:+998787771110">+998-78-777-11-10</a>
+            <a href="tel:+998914433833">+998-91-443-38-33</a>
             <button
               onClick={() => {
                 setIsOpenButtons(!isOpenButtons);
@@ -159,6 +175,7 @@ function Navbar() {
                         ? "ru"
                         : "uz";
                     setLanguage(nextLang);
+                    setActive(false);
                   }}
                   className="btn1"
                 >
@@ -179,6 +196,7 @@ function Navbar() {
                         ? "en"
                         : "uz";
                     setLanguage(nextLang);
+                    setActive(false);
                   }}
                   className="btn2"
                 >

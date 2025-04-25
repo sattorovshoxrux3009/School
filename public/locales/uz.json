@@ -1,4 +1,5 @@
 {
+  "homePage": "Bosh sahifa",
   "aboutUs": "Biz haqimizda",
   "schoolLife": "Maktab hayoti",
   "agenda": "Kun tartibi",
@@ -10,9 +11,9 @@
   "education": "UCHUN SIFATLI TA'LIM",
   "mainText": "Har bir o'quvchi bilan individual yondashuv asosida ta'lim. Zamonaviy o'qitish metodlari asosida o'zgacha ta'lim tizimi. Tajribali o'qituvchilar.",
   "signUp": "Ro'yxatdan o'tish",
-  "pupils":"maktabdagi o'quvchilar",
-  "food":"mahal ovqat",
-  "helpPlace":"Woonder Kids shunchaki o'qish joyi emas, balki har bir bolaga shaxsiy yordam va e'tibor qaratiladigan joy.",
-  "professionalTeachers":"Professional o'qituvchilar",
-  "keySuccess":"30+ o'qituvchi – bu bizning o'quvchilarimiz muvaffaqiyatining kaliti."
+  "pupils": "maktabdagi o'quvchilar",
+  "food": "mahal ovqat",
+  "helpPlace": "Woonder Kids shunchaki o'qish joyi emas, balki har bir bolaga shaxsiy yordam va e'tibor qaratiladigan joy.",
+  "professionalTeachers": "Professional o'qituvchilar",
+  "keySuccess": "30+ o'qituvchi – bu bizning o'quvchilarimiz muvaffaqiyatining kaliti."
 }
