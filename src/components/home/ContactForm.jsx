@@ -13,8 +13,8 @@ function ContactForm() {
   const language = localStorage.getItem("i18nextLng");
 
   let bot = {
-    TOKEN: "6828188723:AAGIW9VZHvexrSVhfmXdPPRwN47-gTQ1Dds",
-    chatID: "5055000310",
+    TOKEN: "7746874876:AAGl1CtRvPkFqWoAwaS4qDdeeaWYSqgylBg",
+    chatID: "1059069336",
     message: `Sizga Wonder Kids saytingiz bo'yicha yangi xabar yo'llandi!
         %0AXabar ${
           activeType == "1-4"
