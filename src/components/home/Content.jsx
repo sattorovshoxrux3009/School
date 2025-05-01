@@ -1,9 +1,12 @@
 import "./Content.scss";
 import content from "../../video/content.mp4";
 import { useRef, useState } from "react";
-import { motion, AnimatePresence, easeOut } from "framer-motion";
+import { motion, easeOut } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 function Content() {
+  const { t } = useTranslation();
+
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -36,16 +39,13 @@ function Content() {
               whileInView={{ opacity: [0, 0.8] }}
               transition={{ duration: 1, ease: easeOut }}
             >
-              Bizning xususiy maktabimizga xush kelibsiz - har bir talaba o'z
-              salohiyatini zamonaviy texnika va shaxsiy yondashuv orqali ochib
-              beradigan joy.
+              {t("content1")}
             </motion.p>
             <motion.p
               whileInView={{ opacity: [0, 0.8] }}
               transition={{ duration: 1, ease: easeOut }}
             >
-              Muvaffaqiyatli kelajak uchun mustahkam poydevor yaratish uchun biz
-              akademik sifat, yordam va individual e'tiborni birlashtiramiz.
+              {t("content2")}
             </motion.p>
           </div>
           <div className="right">

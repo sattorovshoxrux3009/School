@@ -1,9 +1,12 @@
 import "./Methods.scss";
 import method1 from "../../img/methods1.webp";
 import { useRef } from "react";
-import { motion, AnimatePresence, easeOut } from "framer-motion";
+import { motion, easeOut } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 function Methods() {
+  const { t } = useTranslation();
+
   const listRef = useRef(null);
   const isDragging = useRef(false);
   const startX = useRef(0);
@@ -39,14 +42,13 @@ function Methods() {
             whileInView={{ y: [100, 1] }}
             transition={{ duration: 0.3, ease: easeOut }}
           >
-            bizning <span>usulimiz</span>
+            {t("method1")} <span>{t("method2")}</span>
           </motion.h1>
           <motion.p
             whileInView={{ y: [100, 1] }}
             transition={{ duration: 0.5, ease: easeOut }}
           >
-            Maktabimizdagi ta’lim bosqichma-bosqich tizim asosida har tomonlama
-            rivojlantirish va xalqaro standartlarga asoslangan.
+            {t("method3")}
           </motion.p>
         </div>
         <ul
@@ -66,13 +68,8 @@ function Methods() {
           >
             <img src={method1} alt="" />
             <span>
-              <h1>1-4 sinflar</h1>
-              <p>
-                O‘quvchilar ustozlari bilan birgalikda topshiriqlarni
-                bajaradilar, bu esa ularga mavzularni yaxshiroq tushunish
-                imkonini beradi. Topshiriqlar sodda, aniq va bola tilida
-                tushuntiriladi
-              </p>
+              <h1>{t("method4")}</h1>
+              <p>{t("method5")}</p>
             </span>
           </motion.li>
           <motion.li
@@ -81,12 +78,8 @@ function Methods() {
           >
             <img src={method1} alt="" />
             <span>
-              <h1>5-9 sinflar</h1>
-              <p>
-                Asosiy fanlarni, jumladan chet tillari, tabiiy fanlar va
-                texnologiyalarni chuqur o‘rganishadi. Tanqidiy fikrlash va
-                tadqiqotchilik ko‘nikmalarini yanada rivojlantirishadi.
-              </p>
+              <h1>{t("method6")}</h1>
+              <p>{t("method7")}</p>
             </span>
           </motion.li>
           <motion.li
@@ -95,12 +88,8 @@ function Methods() {
           >
             <img src={method1} alt="" />
             <span>
-              <h1>10–11-sinflar</h1>
-              <p>
-                Universitetlarga tayyorgarlik: professional yo‘nalishlarini
-                tanlash, xalqaro imtihonlarga (IELTS, SAT) intensiv tayyorgarlik
-                ko`rish va loyihalar yaratish bilan shug`ullanishadi
-              </p>
+              <h1>{t("method8")}</h1>
+              <p>{t("method9")}</p>
             </span>
           </motion.li>
         </ul>
