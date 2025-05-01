@@ -1,6 +1,7 @@
 import "./Events.scss";
 import eventImg from "../../img/events.webp";
 import { useEffect, useRef, useState } from "react";
+import { motion, easeOut } from "framer-motion";
 
 function Events() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -43,11 +44,9 @@ function Events() {
   useEffect(() => {
     contentRefs.current.forEach((ref, i) => {
       if (!ref) return;
-
       if (i === openIndex) {
         ref.style.height = "0px"; // oldin nol qilamiz
         const scrollHeight = ref.scrollHeight;
-
         requestAnimationFrame(() => {
           ref.style.height = scrollHeight + "px";
         });
@@ -60,10 +59,24 @@ function Events() {
     <div className="events">
       <div className="container">
         <div className="left">
-          <h1>Sinfdan tashqari tadbirlar</h1>
+          <motion.h1
+            whileInView={{ y: [100, 1] }}
+            transition={{ delay: 0, duration: 0.3, ease: "easeOut" }}
+          >
+            Sinfdan tashqari tadbirlar
+          </motion.h1>
           <ul className="max-w-xl mx-auto">
             {faqs.map((faq, index) => (
-              <li key={index} onClick={() => handleClick(index)}>
+              <motion.li
+                key={index}
+                onClick={() => handleClick(index)}
+                whileInView={{ opacity: [0, 1] }}
+                transition={{
+                  delay: index * 0.1,
+                  duration: 0.3,
+                  ease: "easeOut",
+                }}
+              >
                 <div>
                   <div
                     className={
@@ -88,13 +101,17 @@ function Events() {
                   <div className="answer">{faq.answer}</div>
                 </div>
                 {/* <hr /> */}
-              </li>
+              </motion.li>
             ))}
           </ul>
         </div>
-        <div className="right">
+        <motion.div
+          className="right"
+          whileInView={{ opacity: [0, 1] }}
+          transition={{ delay: 0.5, duration: 0.3, ease: "easeOut" }}
+        >
           <img src={eventImg} alt="" />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
