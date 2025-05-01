@@ -3,6 +3,7 @@ import Support from "../components/home/Support.jsx";
 import Content from "../components/home/Content.jsx";
 import Methods from "../components/home/Methods.jsx";
 import Events from "../components/home/Events.jsx";
+import ContactForm from "../components/home/ContactForm.jsx";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <Content/>
       <Methods/>
       <Events/>
+      <ContactForm/>
     </div>
   );
 }
