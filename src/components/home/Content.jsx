@@ -1,25 +1,27 @@
 import "./Content.scss";
 import content from "../../video/content.mp4";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, easeOut } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import contentImg from "../../img/content.png";
 
 function Content() {
   const { t } = useTranslation();
-
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
   const handlePlayPause = () => {
-    if (videoRef.current) {
-      if (isPlaying) {
-        videoRef.current.pause();
-      } else {
-        videoRef.current.play();
-      }
-      setIsPlaying(!isPlaying); // holatni almashtiramiz
-    }
+    setIsPlaying((prev) => !prev); // faqat holatni almashtiramiz
   };
+
+  useEffect(() => {
+    if (isPlaying && videoRef.current) {
+      videoRef.current.play();
+    } else if (!isPlaying && videoRef.current) {
+      videoRef.current.pause();
+    }
+  }, [isPlaying]);
+
   return (
     <div className="content">
       <div className="container">
@@ -49,13 +51,18 @@ function Content() {
             </motion.p>
           </div>
           <div className="right">
-            <video
-              ref={videoRef}
-              onClick={handlePlayPause}
-              src={content}
-              width="400"
-              controls={false}
-            />
+            {!isPlaying && (
+              <img onClick={handlePlayPause} src={contentImg} alt="" />
+            )}
+            {isPlaying && (
+              <video
+                ref={videoRef}
+                onClick={handlePlayPause}
+                src={content}
+                width="400"
+                controls={false}
+              />
+            )}
             {!isPlaying && (
               <motion.button
                 onClick={handlePlayPause}
