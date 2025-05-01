@@ -1,36 +1,34 @@
 import "./Events.scss";
 import eventImg from "../../img/events.webp";
 import { useEffect, useRef, useState } from "react";
-import { motion, easeOut } from "framer-motion";
+import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 function Events() {
+  const { t } = useTranslation();
+
   const [openIndex, setOpenIndex] = useState(null);
   const contentRefs = useRef([]);
   const faqs = [
     {
-      question: "IT, robototexnika",
-      answer:
-        "Kurs dasturlash asoslari, algoritmlarni o‘rganish, veb-saytlar va mobil ilovalar yaratish, kiberxavfsizlikni joriy qilishni o‘z ichiga oladi. Bu talabalar uchun tez rivojlanayotgan texnologiya sanoatida talab qilinadigan ko'nikmalarni o'rganish uchun ajoyib imkoniyatdir.",
+      question: t("event2"),
+      answer: t("event3"),
     },
     {
-      question: "karate",
-      answer:
-        "Klassik karate mashg'ulotlari o'quvchilarning jismoniy tayyorgarligini oshirishga, chidamlilik, kuch va muvofiqlashtirishni rivojlantirishga yordam beradi. Karate, shuningdek, intizom, hurmat va o'ziga ishonchni uyg'otadi.",
+      question: t("event4"),
+      answer: t("event5"),
     },
     {
-      question: "Shaxmat",
-      answer:
-        "Shaxmat to‘garagi o‘quvchilarda strategik fikrlash, mantiq va sabr-toqatni rivojlantirishga yordam beradi. Shaxmat o‘ynash diqqatni yaxshilaydi va ongli qarorlar qabul qilishga o‘rgatadi, bu nafaqat doskada, balki hayotda ham foydalidir.",
+      question: t("event6"),
+      answer: t("event7"),
     },
     {
-      question: "stol tennisi",
-      answer:
-        "Stol tennisi mashg'ulotlari chaqqonlik, reaktsiya tezligi va muvofiqlashtirishni rivojlantirishga yordam beradi. Sport o'ynash, shuningdek, chidamlilik va konsentratsiyani o'rgatadi, jismoniy va aqliy rivojlanishga yordam beradi.",
+      question: t("event8"),
+      answer: t("event9"),
     },
     {
-      question: "chizish",
-      answer:
-        "Ushbu kurs tasviriy san'at, rassomlik, haykaltaroshlik va dekorativ hunarmandchilikni o'z ichiga oladi. O`quvchilar ijodiy qobiliyatlarini rivojlantiradilar va turli xil badiiy texnikalar orqali o'z g'oyalari va his-tuyg'ularini ifodalashni o'rganadilar.",
+      question: t("event10"),
+      answer: t("event11"),
     },
   ];
   const handleClick = (index) => {
@@ -63,7 +61,7 @@ function Events() {
             whileInView={{ y: [100, 1] }}
             transition={{ delay: 0, duration: 0.3, ease: "easeOut" }}
           >
-            Sinfdan tashqari tadbirlar
+            {t("event1")}
           </motion.h1>
           <ul className="max-w-xl mx-auto">
             {faqs.map((faq, index) => (
