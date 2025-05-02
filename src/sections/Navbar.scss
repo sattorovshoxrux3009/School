@@ -1,4 +1,20 @@
+.fixed {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+  .container {
+    .wrapper {
+      margin: 10px;
+    }
+  }
+}
 .navbar {
+  transition: all 0.3s ease-in-out;
   .wrapper {
     background-color: white;
     border-radius: 15px;
@@ -8,6 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     @media screen and (max-width: 670px) {
       padding: 5px 15px;
     }

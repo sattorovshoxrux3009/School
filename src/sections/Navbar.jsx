@@ -26,9 +26,20 @@ function Navbar() {
     setLang(lang);
   }
 
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 25);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  console.log(scrolled);
   return (
     <>
-      <div className="navbar">
+      <div className={`navbar ${scrolled ? "fixed" : ""}`}>
         <div className="container">
           <div className="wrapper">
             <a
