@@ -15,23 +15,23 @@ function ContactForm() {
   let bot = {
     TOKEN: "7746874876:AAGl1CtRvPkFqWoAwaS4qDdeeaWYSqgylBg",
     chatID: "1059069336",
-    message: `Sizga Wonder Kids saytingiz bo'yicha yangi xabar yo'llandi!
-        %0AXabar ${
+    message: `📩 Yangi xabar Wonder Kids saytida!
+        %0A📚 Sinf yo'nalishi: ${
           activeType == "1-4"
             ? "1-4 sinflar"
             : activeType == "5-8"
             ? "5-8 sinflar"
             : "9-11 sinflar"
-        } bilan bo'g'liq
-        %0AXabar yuboruvchi ismi: ${name}
-        %0AXabar yuboruvchi telefon raqami:${encodeURIComponent(phoneNumber)}
-        %0AFoydalanuvchiga ${
+        } 
+        %0A👤 Yuboruvchi: ${name}
+        %0A📞 Telefon:${encodeURIComponent(phoneNumber)}
+        %0A🌐 Til bo'yicha so'rov: ${
           language == "uz"
-            ? "o'zbek tilida"
+            ? "O'zbek tili"
             : language == "ru"
-            ? "rus tilida"
-            : "ingliz tilida"
-        } mutaxasis kerak
+            ? "Rus tili"
+            : "Ingliz tili"
+        } 
     `,
   };
 
