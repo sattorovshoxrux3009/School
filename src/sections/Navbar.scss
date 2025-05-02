@@ -9,7 +9,7 @@
   z-index: 99;
   .container {
     .wrapper {
-      margin: 10px;
+      margin: 10px 0;
     }
   }
 }
@@ -20,11 +20,9 @@
     border-radius: 15px;
     margin-top: 20px;
     padding: 5px 50px;
-    // border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     @media screen and (max-width: 670px) {
       padding: 5px 15px;
     }
