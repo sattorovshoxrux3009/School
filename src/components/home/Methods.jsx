@@ -64,7 +64,7 @@ function Methods() {
         >
           <motion.li
             whileInView={{ opacity: [0, 1] }}
-            transition={{ delay: 0, duration: 0.5, ease: "easeOut" }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
           >
             <img src={method1} alt="" />
             <span>
@@ -74,7 +74,7 @@ function Methods() {
           </motion.li>
           <motion.li
             whileInView={{ opacity: [0, 1] }}
-            transition={{ delay: 0.3, duration: 0.3, ease: "easeOut" }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
           >
             <img src={method1} alt="" />
             <span>
@@ -84,7 +84,7 @@ function Methods() {
           </motion.li>
           <motion.li
             whileInView={{ opacity: [0, 1] }}
-            transition={{ delay: 0.6, duration: 0.3, ease: "easeOut" }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
           >
             <img src={method1} alt="" />
             <span>
