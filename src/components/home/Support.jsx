@@ -1,9 +1,9 @@
 import "./Support.scss";
 import { easeOut, motion } from "framer-motion";
-import img1 from "../../img/teacher1.png";
-import img2 from "../../img/teacher2.png";
-import img3 from "../../img/teacher3.png";
-import img4 from "../../img/teacher4.png";
+import img1 from "../../img/teacher1.jpg";
+import img2 from "../../img/teacher2.jpg";
+import img3 from "../../img/teacher3.jpg";
+import img4 from "../../img/teacher4.jpg";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
@@ -26,7 +26,7 @@ function Support() {
                 <p>{t("pupils")}</p>
               </div>
               <div>
-                <h1>3</h1>
+                <h1>2</h1>
                 <p>{t("food")}</p>
               </div>
             </li>
@@ -46,10 +46,10 @@ function Support() {
           <h1>{t("professionalTeachers")}</h1>
           <p>{t("keySuccess")}</p>
           <div>
-            <img className="img1" src={img1} alt="image" />
-            <img className="img2" src={img2} alt="image" />
-            <img className="img3" src={img3} alt="image" />
-            <img className="img4" src={img4} alt="image" />
+            <img className="img1" src={img4} alt="image" />
+            <img className="img2" src={img3} alt="image" />
+            <img className="img3" src={img2} alt="image" />
+            <img className="img4" src={img1} alt="image" />
           </div>
           <svg
             width="32"
