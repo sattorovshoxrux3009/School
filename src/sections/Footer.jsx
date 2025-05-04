@@ -108,15 +108,16 @@ function Footer() {
               <a href="">{t("contact")}</a>
             </ul>
             <ul>
-              <h3>Ish vaqti</h3>
-              <p>Du-Ju soat 09:00 dan 17:00 gacha</p>
+              <h3>{t("footer1")}</h3>
+              <p>{t("footer2")}</p>
             </ul>
             <ul>
-              <h3>Kontaktlar</h3>
-              <p>Buxoro, G'ijduvon shahri, Muqimiy ko’chasi</p>
-              <p> Mo'ljal: Tez Tibbiy yordam yonida 46- maktab ro’parasida</p>
+              <h3>{t("footer3")}</h3>
+              <p>{t("footer4")}</p>
+              <p>{t("footer5")}</p>
               <p>
-                ☎️Telefon: <br />
+                {t("footer6")}
+                <br />
                 📞 90-512-14-07 <br />
                 📞 91-443-38-33
               </p>
@@ -162,7 +163,7 @@ function Footer() {
           </div>
           <div className="bottom">
             <hr />
-            <h6>Barcha huquqlar himoya qilingan 2025 yil.</h6>
+            <h6>{t("footer7")}</h6>
           </div>
         </div>
       </div>
