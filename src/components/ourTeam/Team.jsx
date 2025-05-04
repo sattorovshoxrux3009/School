@@ -1,8 +1,11 @@
 import { easeOut, motion } from "framer-motion";
 import { act, useState } from "react";
 import "./Team.scss";
-import teacher1 from "../../img/teamTeacher1.png";
 import { useTranslation } from "react-i18next";
+import beginnerteacher1 from "../../img/beginnerteacher1.jpg";
+import beginnerteacher2 from "../../img/beginnerteacher2.jpg";
+import beginnerteacher3 from "../../img/beginnerteacher3.jpg";
+import highteacher1 from "../../img/highteacher1.jpg";
 
 function Team() {
   const { t } = useTranslation();
@@ -50,33 +53,33 @@ function Team() {
                 whileInView={{ opacity: [0, 1] }}
                 transition={{ duration: 0.3, ease: easeOut }}
               >
-                <img src={teacher1} alt="" />
-                <h1>TO‘XTANAZAROV XURSHID SHAVKATBEKOVICH</h1>
-                <p>Maktab direktor</p>
+                <img src={beginnerteacher1} alt="" />
+                <h1>{t("team1")}</h1>
+                <p>{t("team2")}</p>
               </motion.li>
               <motion.li
                 whileInView={{ opacity: [0, 1] }}
                 transition={{ duration: 0.3, ease: easeOut }}
               >
-                <img src={teacher1} alt="" />
-                <h1>TO‘XTANAZAROV XURSHID SHAVKATBEKOVICH</h1>
-                <p>Maktab direktor</p>
+                <img src={beginnerteacher1} alt="" />
+                <h1>{t("team1")}</h1>
+                <p>{t("team2")}</p>
               </motion.li>
               <motion.li
                 whileInView={{ opacity: [0, 1] }}
                 transition={{ duration: 0.3, ease: easeOut }}
               >
-                <img src={teacher1} alt="" />
-                <h1>TO‘XTANAZAROV XURSHID SHAVKATBEKOVICH</h1>
-                <p>Maktab direktori</p>
+                <img src={beginnerteacher1} alt="" />
+                <h1>{t("team1")}</h1>
+                <p>{t("team2")}i</p>
               </motion.li>
               <motion.li
                 whileInView={{ opacity: [0, 1] }}
                 transition={{ duration: 0.3, ease: easeOut }}
               >
-                <img src={teacher1} alt="" />
-                <h1>TO‘XTANAZAROV XURSHID SHAVKATBEKOVICH</h1>
-                <p>Maktab direktor</p>
+                <img src={beginnerteacher1} alt="" />
+                <h1>{t("team1")}</h1>
+                <p>{t("team2")}</p>
               </motion.li>
             </>
           ) : active == "beginner" ? (
@@ -85,33 +88,33 @@ function Team() {
                 whileInView={{ opacity: [0, 1] }}
                 transition={{ duration: 0.2, ease: easeOut }}
               >
-                <img src={teacher1} alt="" />
-                <h1>TO‘XTANAZAROV XURSHID SHAVKATBEKOVICH</h1>
-                <p>Maktab direktor</p>
+                <img src={beginnerteacher1} alt="" />
+                <h1>{t("team1")}</h1>
+                <p>{t("team2")}</p>
               </motion.li>
               <motion.li
                 whileInView={{ opacity: [0, 1] }}
                 transition={{ duration: 0.7, ease: easeOut }}
               >
-                <img src={teacher1} alt="" />
-                <h1>TO‘XTANAZAROV XURSHID SHAVKATBEKOVICH</h1>
-                <p>Maktab direktor</p>
+                <img src={beginnerteacher2} alt="" />
+                <h1></h1>
+                <p>{t("team2")}</p>
               </motion.li>
               <motion.li
                 whileInView={{ opacity: [0, 1] }}
                 transition={{ duration: 1.2, ease: easeOut }}
               >
-                <img src={teacher1} alt="" />
-                <h1>TO‘XTANAZAROV XURSHID SHAVKATBEKOVICH</h1>
-                <p>Maktab direktori</p>
+                <img src={beginnerteacher3} alt="" />
+                <h1></h1>
+                <p>{t("team2")}</p>
               </motion.li>
               <motion.li
                 whileInView={{ opacity: [0, 1] }}
                 transition={{ duration: 1.7, ease: easeOut }}
               >
-                <img src={teacher1} alt="" />
-                <h1>TO‘XTANAZAROV XURSHID SHAVKATBEKOVICH</h1>
-                <p>Maktab direktor</p>
+                <img src={beginnerteacher1} alt="" />
+                <h1>{t("team1")}</h1>
+                <p>{t("team2")}</p>
               </motion.li>
             </>
           ) : (
@@ -120,33 +123,33 @@ function Team() {
                 whileInView={{ opacity: [0, 1] }}
                 transition={{ duration: 0.2, ease: easeOut }}
               >
-                <img src={teacher1} alt="" />
-                <h1>TO‘XTANAZAROV XURSHID SHAVKATBEKOVICH</h1>
-                <p>Maktab direktor</p>
+                <img src={highteacher1} alt="" />
+                <h1>{t("team3")}</h1>
+                <p>{t("team4")}</p>
               </motion.li>
               <motion.li
                 whileInView={{ opacity: [0, 1] }}
                 transition={{ duration: 0.7, ease: easeOut }}
               >
-                <img src={teacher1} alt="" />
-                <h1>TO‘XTANAZAROV XURSHID SHAVKATBEKOVICH</h1>
-                <p>Maktab direktor</p>
+                <img src={beginnerteacher1} alt="" />
+                <h1>{t("team1")}</h1>
+                <p>{t("team2")}</p>
               </motion.li>
               <motion.li
                 whileInView={{ opacity: [0, 1] }}
                 transition={{ duration: 1.2, ease: easeOut }}
               >
-                <img src={teacher1} alt="" />
-                <h1>TO‘XTANAZAROV XURSHID SHAVKATBEKOVICH</h1>
-                <p>Maktab direktori</p>
+                <img src={beginnerteacher1} alt="" />
+                <h1>{t("team1")}</h1>
+                <p>{t("team2")}i</p>
               </motion.li>
               <motion.li
                 whileInView={{ opacity: [0, 1] }}
                 transition={{ duration: 1.7, ease: easeOut }}
               >
-                <img src={teacher1} alt="" />
-                <h1>TO‘XTANAZAROV XURSHID SHAVKATBEKOVICH</h1>
-                <p>Maktab direktor</p>
+                <img src={beginnerteacher1} alt="" />
+                <h1>{t("team1")}</h1>
+                <p>{t("team2")}</p>
               </motion.li>
             </>
           )}
