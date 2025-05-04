@@ -14,10 +14,10 @@ function Home() {
       <Support />
       <Content />
       <Methods />
+      <Agenda />
       <Events />
       <Choice />
       <ContactForm />
-      <Agenda/>
     </div>
   );
 }

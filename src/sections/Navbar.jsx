@@ -75,7 +75,7 @@ function Navbar() {
                 {t("ourTeam")}
               </a>
               <a
-                href="#events"
+                href="#agenda"
                 onClick={() => {
                   navigate("/");
                 }}
@@ -194,7 +194,7 @@ function Navbar() {
               {t("ourTeam")}
             </a>
             <a
-              href="#events"
+              href="#agenda"
               onClick={() => {
                 navigate("/");
                 setActive(false);

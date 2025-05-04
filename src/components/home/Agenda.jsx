@@ -10,7 +10,7 @@ function Agenda() {
   const { t } = useTranslation();
 
   return (
-    <div className="agenda">
+    <section id="agenda" className="agenda">
       <div className="container">
         <motion.h1
           initial={{ y: 100, opacity: 0 }}
@@ -98,7 +98,7 @@ function Agenda() {
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 }
 

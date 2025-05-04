@@ -78,7 +78,7 @@ function Footer() {
                 {t("ourTeam")}
               </a>
               <a
-                href="#events"
+                href="#agenda"
                 onClick={() => {
                   navigate("/");
                 }}
