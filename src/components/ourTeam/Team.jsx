@@ -48,7 +48,7 @@ function Team() {
             <>
               <motion.li
                 whileInView={{ opacity: [0, 1] }}
-                transition={{ duration: 0.2, ease: easeOut }}
+                transition={{ duration: 0.3, ease: easeOut }}
               >
                 <img src={teacher1} alt="" />
                 <h1>TO‘XTANAZAROV XURSHID SHAVKATBEKOVICH</h1>
@@ -56,7 +56,7 @@ function Team() {
               </motion.li>
               <motion.li
                 whileInView={{ opacity: [0, 1] }}
-                transition={{ duration: 0.7, ease: easeOut }}
+                transition={{ duration: 0.3, ease: easeOut }}
               >
                 <img src={teacher1} alt="" />
                 <h1>TO‘XTANAZAROV XURSHID SHAVKATBEKOVICH</h1>
@@ -64,7 +64,7 @@ function Team() {
               </motion.li>
               <motion.li
                 whileInView={{ opacity: [0, 1] }}
-                transition={{ duration: 1.2, ease: easeOut }}
+                transition={{ duration: 0.3, ease: easeOut }}
               >
                 <img src={teacher1} alt="" />
                 <h1>TO‘XTANAZAROV XURSHID SHAVKATBEKOVICH</h1>
@@ -72,7 +72,7 @@ function Team() {
               </motion.li>
               <motion.li
                 whileInView={{ opacity: [0, 1] }}
-                transition={{ duration: 1.7, ease: easeOut }}
+                transition={{ duration: 0.3, ease: easeOut }}
               >
                 <img src={teacher1} alt="" />
                 <h1>TO‘XTANAZAROV XURSHID SHAVKATBEKOVICH</h1>
