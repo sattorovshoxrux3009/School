@@ -48,40 +48,7 @@ function Team() {
         </span>
         <ul>
           {active == "leadership" ? (
-            <>
-              <motion.li
-                whileInView={{ opacity: [0, 1] }}
-                transition={{ duration: 0.3, ease: easeOut }}
-              >
-                <img src={beginnerteacher1} alt="" />
-                <h1>{t("team1")}</h1>
-                <p>{t("team2")}</p>
-              </motion.li>
-              <motion.li
-                whileInView={{ opacity: [0, 1] }}
-                transition={{ duration: 0.3, ease: easeOut }}
-              >
-                <img src={beginnerteacher1} alt="" />
-                <h1>{t("team1")}</h1>
-                <p>{t("team2")}</p>
-              </motion.li>
-              <motion.li
-                whileInView={{ opacity: [0, 1] }}
-                transition={{ duration: 0.3, ease: easeOut }}
-              >
-                <img src={beginnerteacher1} alt="" />
-                <h1>{t("team1")}</h1>
-                <p>{t("team2")}i</p>
-              </motion.li>
-              <motion.li
-                whileInView={{ opacity: [0, 1] }}
-                transition={{ duration: 0.3, ease: easeOut }}
-              >
-                <img src={beginnerteacher1} alt="" />
-                <h1>{t("team1")}</h1>
-                <p>{t("team2")}</p>
-              </motion.li>
-            </>
+            <></>
           ) : active == "beginner" ? (
             <>
               <motion.li
@@ -108,14 +75,6 @@ function Team() {
                 <h1></h1>
                 <p>{t("team2")}</p>
               </motion.li>
-              <motion.li
-                whileInView={{ opacity: [0, 1] }}
-                transition={{ duration: 1.7, ease: easeOut }}
-              >
-                <img src={beginnerteacher1} alt="" />
-                <h1>{t("team1")}</h1>
-                <p>{t("team2")}</p>
-              </motion.li>
             </>
           ) : (
             <>
@@ -126,30 +85,6 @@ function Team() {
                 <img src={highteacher1} alt="" />
                 <h1>{t("team3")}</h1>
                 <p>{t("team4")}</p>
-              </motion.li>
-              <motion.li
-                whileInView={{ opacity: [0, 1] }}
-                transition={{ duration: 0.7, ease: easeOut }}
-              >
-                <img src={beginnerteacher1} alt="" />
-                <h1>{t("team1")}</h1>
-                <p>{t("team2")}</p>
-              </motion.li>
-              <motion.li
-                whileInView={{ opacity: [0, 1] }}
-                transition={{ duration: 1.2, ease: easeOut }}
-              >
-                <img src={beginnerteacher1} alt="" />
-                <h1>{t("team1")}</h1>
-                <p>{t("team2")}i</p>
-              </motion.li>
-              <motion.li
-                whileInView={{ opacity: [0, 1] }}
-                transition={{ duration: 1.7, ease: easeOut }}
-              >
-                <img src={beginnerteacher1} alt="" />
-                <h1>{t("team1")}</h1>
-                <p>{t("team2")}</p>
               </motion.li>
             </>
           )}
