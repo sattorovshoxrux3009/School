@@ -6,7 +6,7 @@ function Choice() {
   const { t } = useTranslation();
 
   return (
-    <div className="choice">
+    <section id="schoolLife" className="choice">
       <div className="container">
         <div className="top">
           <motion.h1
@@ -64,7 +64,7 @@ function Choice() {
           </motion.li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 }
 

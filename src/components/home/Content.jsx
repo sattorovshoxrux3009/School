@@ -23,7 +23,7 @@ function Content() {
   }, [isPlaying]);
 
   return (
-    <div className="content">
+    <section id="aboutUs" className="content">
       <div className="container">
         <motion.div
           whileInView={{ y: [100, 1] }}
@@ -103,7 +103,7 @@ function Content() {
           </div>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -54,7 +54,7 @@ function Events() {
     });
   }, [openIndex]);
   return (
-    <div className="events">
+    <section id="events" className="events">
       <div className="container">
         <div className="left">
           <motion.h1
@@ -111,7 +111,7 @@ function Events() {
           <img src={eventImg} alt="" />
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 }
 

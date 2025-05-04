@@ -13,6 +13,12 @@ function Navbar() {
     localStorage.getItem("i18nextLng")
   );
 
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   const { t, i18n } = useTranslation();
   const [lang, setLang] = useState(localStorage.getItem("i18nextLng"));
 
@@ -51,10 +57,14 @@ function Navbar() {
             </a>
 
             <div className="links">
-              <a href="">{t("aboutUs")}</a>
-              <a href="">{t("schoolLife")}</a>
-              <a href="">{t("agenda")}</a>
-              <a href="">{t("admission")}</a>
+              <a
+                href="#aboutUs"
+                onClick={() => {
+                  navigate("/");
+                }}
+              >
+                {t("aboutUs")}
+              </a>
               <a
                 onClick={() => {
                   navigate("/our_team");
@@ -64,6 +74,30 @@ function Navbar() {
                 }
               >
                 {t("ourTeam")}
+              </a>
+              <a
+                href="#events"
+                onClick={() => {
+                  navigate("/");
+                }}
+              >
+                {t("agenda")}
+              </a>
+              <a
+                href="#schoolLife"
+                onClick={() => {
+                  navigate("/");
+                }}
+              >
+                {t("schoolLife")}
+              </a>
+              <a
+                href="#admission"
+                onClick={() => {
+                  navigate("/");
+                }}
+              >
+                {t("admission")}
               </a>
               <a href="">{t("contact")}</a>
             </div>

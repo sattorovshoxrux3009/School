@@ -90,7 +90,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="contactForm">
+    <section id="admission" className="contactForm">
       <div className="container">
         <div className="left">
           <motion.h1
@@ -216,7 +216,7 @@ function ContactForm() {
           </form>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
