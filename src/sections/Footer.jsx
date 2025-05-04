@@ -3,7 +3,7 @@ import logo from "../img/logo.jpg";
 
 function Footer() {
   return (
-    <div className="footer">
+    <section id="contact" className="footer">
       <div className="container">
         <div className="wrapper">
           <div className="top">
@@ -151,7 +151,7 @@ function Footer() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

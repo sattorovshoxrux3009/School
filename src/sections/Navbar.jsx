@@ -177,27 +177,59 @@ function Navbar() {
           </div>
           <div className="links">
             <a
+              href="#aboutUs"
               onClick={() => {
-                setActive(false);
                 navigate("/");
+                setActive(false);
               }}
             >
-              {t("homePage")}
+              {t("aboutUs")}
             </a>
-            <a href="">{t("aboutUs")}</a>
-            <a href="">{t("schoolLife")}</a>
-            <a href="">{t("agenda")}</a>
-            <a href="">{t("admission")}</a>
             <a
               onClick={() => {
                 navigate("/our_team");
                 setActive(false);
               }}
-              className={location.pathname === "/our_team" ? "active-link" : ""}
+              href="#"
             >
               {t("ourTeam")}
             </a>
-            <a href="">{t("contact")}</a>
+            <a
+              href="#events"
+              onClick={() => {
+                navigate("/");
+                setActive(false);
+              }}
+            >
+              {t("agenda")}
+            </a>
+            <a
+              href="#schoolLife"
+              onClick={() => {
+                navigate("/");
+                setActive(false);
+              }}
+            >
+              {t("schoolLife")}
+            </a>
+            <a
+              href="#admission"
+              onClick={() => {
+                navigate("/");
+                setActive(false);
+              }}
+            >
+              {t("admission")}
+            </a>
+            <a
+              href="#contact"
+              onClick={() => {
+                navigate("/");
+                setActive(false);
+              }}
+            >
+              {t("contact")}
+            </a>
           </div>
           <div className="bottom">
             <a href="tel:+998914433833">+998-91-443-38-33</a>
