@@ -52,7 +52,7 @@
   "contactForm8": "1-4 grades",
   "contactForm9": "5-8 grades",
   "contactForm10": "9-11 grades",
-  "contactForm11": "Submit application",
+  "contactForm11": "Submit",
   "contactForm12": "Please use only numbers",
   "contactForm13": "Phone number is incomplete",
   "contactForm14": "Name must be at least 4 characters",
@@ -75,5 +75,17 @@
   "footer4": "Bukhara, Gijduvon city, Muqimiy street",
   "footer5": "Landmark: Near Emergency Medical Service, opposite School No. 46",
   "footer6": "☎️Phone:",
-  "footer7": "All rights reserved © 2025"
+  "footer7": "All rights reserved © 2025",
+  "agenda1": "Agenda",
+  "agenda2": "Education based on DTS.",
+  "agenda3": "In-depth",
+  "agenda4": "English, Russian, Math, Native Language, and Computer Science lessons.",
+  "agenda5": "Lunch",
+  "agenda6": "and long break",
+  "agenda7": "8 types of",
+  "agenda8": "free",
+  "agenda9": "clubs",
+  "agenda10": "Helping children",
+  "agenda11": "with their homework",
+  "agenda12": ""
 }

@@ -5,6 +5,7 @@ import Methods from "../components/home/Methods.jsx";
 import Events from "../components/home/Events.jsx";
 import ContactForm from "../components/home/ContactForm.jsx";
 import Choice from "../components/home/Choice.jsx";
+import Agenda from "../components/home/Agenda.jsx";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <Events />
       <Choice />
       <ContactForm />
+      <Agenda/>
     </div>
   );
 }
