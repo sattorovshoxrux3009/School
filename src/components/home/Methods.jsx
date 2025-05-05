@@ -1,5 +1,7 @@
 import "./Methods.scss";
-import method1 from "../../img/methods1.webp";
+import method1 from "../../img/method1.jpg";
+import method2 from "../../img/method2.jpg";
+import method3 from "../../img/method3.jpg";
 import { useRef } from "react";
 import { motion, easeOut } from "framer-motion";
 import { useTranslation } from "react-i18next";
@@ -76,7 +78,7 @@ function Methods() {
             whileInView={{ opacity: [0, 1] }}
             transition={{ duration: 0.3, ease: "easeOut" }}
           >
-            <img src={method1} alt="" />
+            <img src={method2} alt="" />
             <span>
               <h1>{t("method6")}</h1>
               <p>{t("method7")}</p>
@@ -86,7 +88,7 @@ function Methods() {
             whileInView={{ opacity: [0, 1] }}
             transition={{ duration: 0.3, ease: "easeOut" }}
           >
-            <img src={method1} alt="" />
+            <img src={method3} alt="" />
             <span>
               <h1>{t("method8")}</h1>
               <p>{t("method9")}</p>

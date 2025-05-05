@@ -3,7 +3,7 @@ import content from "../../video/content.mp4";
 import { useEffect, useRef, useState } from "react";
 import { motion, easeOut } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import contentImg from "../../img/content.png";
+import contentImg from "../../img/content.jpg";
 
 function Content() {
   const { t } = useTranslation();

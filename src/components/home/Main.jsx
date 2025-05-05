@@ -1,5 +1,5 @@
 import "./Main.scss";
-import mainImage from "../../img/main.jpg";
+import mainImage from "../../img/main.png";
 import { useTranslation } from "react-i18next";
 import { easeOut, motion } from "framer-motion";
 
