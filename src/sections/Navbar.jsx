@@ -98,7 +98,25 @@ function Navbar() {
               >
                 {t("admission")}
               </a>
-              <a href="">{t("contact")}</a>
+
+              <a
+                href="#contact"
+                onClick={() => {
+                  navigate("/");
+                }}
+              >
+                {t("contact")}
+              </a>
+              <a
+                onClick={() => {
+                  navigate("/lesson_time");
+                }}
+                className={
+                  location.pathname === "/lesson_time" ? "active-link" : ""
+                }
+              >
+                Dars jarayoni
+              </a>
             </div>
             <div className="right">
               <a href="tel:+998914433833">+998-91-443-38-33</a>
@@ -228,6 +246,15 @@ function Navbar() {
               }}
             >
               {t("contact")}
+            </a>
+            <a
+              href="#"
+              onClick={() => {
+                navigate("/lesson_time");
+                setActive(false);
+              }}
+            >
+              Dars jarayoni
             </a>
           </div>
           <div className="bottom">
