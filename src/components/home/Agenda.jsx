@@ -3,17 +3,17 @@ import png1 from "../../img/3d1.webp";
 import png2 from "../../img/3d2.webp";
 import png3 from "../../img/3d3.webp";
 import png4 from "../../img/3d4.webp";
-import { motion, easeOut, easeIn } from "framer-motion";
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 function Agenda() {
-  const { t } = useTranslation();
+  const { t } = useTranslation(); 
 
   return (
     <section id="agenda" className="agenda">
       <div className="container">
         <motion.h1
-          initial={{ y: 100, opacity: 0 }}
+          initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.3, delay: 0 }}
         >
@@ -23,7 +23,7 @@ function Agenda() {
           <li>
             <div>
               <motion.h2
-                initial={{ x: -100, opacity: 0 }}
+                initial={{ x: -500, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3, delay: 0 }}
               >
@@ -31,7 +31,7 @@ function Agenda() {
               </motion.h2>
             </div>
             <motion.p
-              initial={{ x: 100, opacity: 0 }}
+              initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.3, delay: 0.2 }}
             >
@@ -42,7 +42,7 @@ function Agenda() {
           <li>
             <div>
               <motion.h2
-                initial={{ x: -100, opacity: 0 }}
+                initial={{ x: -50, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3, delay: 0 }}
               >
@@ -50,7 +50,7 @@ function Agenda() {
               </motion.h2>
             </div>
             <motion.p
-              initial={{ x: 100, opacity: 0 }}
+              initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.3, delay: 0.2 }}
             >
@@ -61,7 +61,7 @@ function Agenda() {
           <li>
             <div>
               <motion.h2
-                initial={{ x: -100, opacity: 0 }}
+                initial={{ x: -50, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3, delay: 0 }}
               >
@@ -69,7 +69,7 @@ function Agenda() {
               </motion.h2>
             </div>
             <motion.p
-              initial={{ x: 100, opacity: 0 }}
+              initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.3, delay: 0.2 }}
             >
@@ -80,7 +80,7 @@ function Agenda() {
           <li>
             <div>
               <motion.h2
-                initial={{ x: -100, opacity: 0 }}
+                initial={{ x: -50, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3, delay: 0 }}
               >
@@ -88,7 +88,7 @@ function Agenda() {
               </motion.h2>
             </div>
             <motion.p
-              initial={{ x: 100, opacity: 0 }}
+              initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.3, delay: 0.2 }}
             >
