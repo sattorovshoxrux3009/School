@@ -1,5 +1,5 @@
 .lessonTime {
-  margin-top: 50px;
+  margin-top: 25px;
   @media screen and (max-width: 768px) {
     margin-top: 25px;
   }
@@ -8,6 +8,7 @@
       h1 {
         font-size: 50px;
         color: #00264b;
+        padding-bottom: 25px;
         @media screen and (max-width: 768px) {
           font-size: 28px;
           text-align: center;

@@ -2,17 +2,23 @@ import "./Main.scss";
 import { useRef, useState } from "react";
 import { motion, easeOut } from "framer-motion";
 
-import video1 from "../../video/lessonTime1.mp4";
+// import video1 from "../../video/lessonTime1.mp4";
 import video2 from "../../video/lessonTime2.mp4";
 import video3 from "../../video/lessonTime3.mp4";
-import poster1 from "../../img/poster1.png";
+import video4 from "../../video/lessonTime4.mp4";
+import video5 from "../../video/lessonTime5.mp4";
+// import poster1 from "../../img/poster1.png";
 import poster2 from "../../img/poster2.png";
-// import poster3 from "../../img/poster3.png";
+import poster3 from "../../img/poster3.png";
+import poster4 from "../../img/poster4.png";
+import poster5 from "../../img/poster5.png";
 
 const videos = [
-  { id: 1, src: video1, poster: poster1 },
-  // { id: 2, src: video2, poster: poster2 },
-  // { id: 3, src: video3, poster: poster2 },
+  // { id: 1, src: video1, poster: poster1 },
+  { id: 2, src: video2, poster: poster2 },
+  { id: 3, src: video3, poster: poster3 },
+  { id: 4, src: video4, poster: poster4 },
+  { id: 5, src: video5, poster: poster5 },
 ];
 
 function Content() {
@@ -41,7 +47,7 @@ function Content() {
             <motion.li
               initial={
                 video.id % 3 == 1
-                  ? { y: 100, opacity: 0 }
+                  ? { x: -100, opacity: 0 }
                   : video.id % 3 == 2
                   ? { x: 100, opacity: 0 }
                   : { x: -100, opacity: 0 }
